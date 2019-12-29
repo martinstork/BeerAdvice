@@ -1,6 +1,11 @@
 # BeerAdvice Pipeline
 trigger:
-- master
+  branches:
+    include:
+    - master
+  paths:
+    exclude:
+    - README.md
 
 pool:
   vmImage: 'windows-latest'
