@@ -1,5 +1,9 @@
 # BeerAdvice
 
+[![Build Status](https://dev.azure.com/560831/BeerAdvice/_apis/build/status/martinstork.BeerAdvice?branchName=master)](https://dev.azure.com/560831/BeerAdvice/_build/latest?definitionId=3&branchName=master)
+
+[![Deployment Status](https://vsrm.dev.azure.com/560831/_apis/public/Release/badge/44509042-753a-44e0-b515-2a00e8989605/2/2)
+
 ## API for getting advice whether to drink beer or Jägertee
 
 The function can be called with **http://beeradvice.azurewebsites.net/api/BeerAdviceFunction** 
@@ -51,7 +55,7 @@ Select the correct Azure App Service and you're done.
 </details>
 
 <details><summary><b>Deployment using CI/CD</b></summary>
-
+This repository is configured with a 
 </details>
 
 ### Environment variables
