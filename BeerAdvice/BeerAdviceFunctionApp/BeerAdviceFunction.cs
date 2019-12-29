@@ -26,7 +26,7 @@ namespace BeerAdvice
             log.LogInformation("{0}Queue triggered", functionLogPrefix);
 
             string city = req.Query["city"].ToString();
-            if (city == null || city.Trim().Length == 0) return new BadRequestObjectResult("Please enter a city on the query string. For example use city Muiden '?city=muiden'");
+            if (city == null || city.Trim().Length == 0) return new BadRequestObjectResult("Please enter a city on the query string. For example use the city Muiden '?city=muiden'");
 
             // Make city name readable
             if (city.Length > 1) city = char.ToUpper(city[0]) + city.Substring(1).ToLower();
