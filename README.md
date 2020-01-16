@@ -11,7 +11,7 @@ Release status:
 The function can be called with **http://beeradvice.azurewebsites.net/api/BeerAdviceFunction**  
 followed by a city [**?city=muiden**](http://beeradvice.azurewebsites.net/api/BeerAdviceFunction?city=muiden).
 
-You will retrieve a URL to your advice image. The URL is created before the image is available. When there's no image just call the URL again.
+You will retrieve a URL to your advice image. The URL is created before the image is available. When there's no image just call the URL again (it takes a couple of seconds).
 
 
 ### Example results
@@ -50,7 +50,7 @@ If needed you can adjust the resource locations, tiers and application-insights 
 <details><summary><b>Deploy with Visual Studio</b></summary>
 Sign in to the Microsoft account on which the resources are created and simply select publish to Azure.
 
-Select the correct Azure App Service and you're done.
+Select an Azure App Service and you're done.
 
 ![Screenshot](https://i.imgur.com/rxiijEs.png)
 </details>
@@ -70,7 +70,7 @@ If this build succeeds a release will follow (README.md changes are ignored).
 
 ### Environment variables
 The release pipeline for this repository is configured to set the environment variables automatically.
-To make the API work in a diffrent environment you need to setup the following environment variables:
+To make the API work in a different environment you need to setup the following environment variables:
 
 | Variable | Description | Value |
 | --- | --- | --- |
